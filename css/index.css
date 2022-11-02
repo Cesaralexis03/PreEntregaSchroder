@@ -1,0 +1,194 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    background-color: black;
+}
+button {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid goldenrod;
+    color: goldenrod;
+    background-color: black;
+}
+
+button:hover{
+    background-color: gray;
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: goldenrod;
+    font-size: 30px;
+}
+
+header .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+
+}
+
+header a:hover {
+    color: white;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: goldenrod;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(/imagen/goku.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    font-size: 70px;
+
+}
+
+#nosotros h2{
+    color: goldenrod;
+}
+
+#nosotros p{
+    font-size: 15px;
+    color: white;
+}
+
+#nosotros .contenedor{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+.formulario{
+    font-weight: bold;
+    border: 5px goldenrod solid;
+    padding: 20px;
+    margin: 10px 10px 10px 10px;
+    border-radius: 5px;
+}
+
+.formulario h3 {
+    text-align: center;
+    color: goldenrod;
+
+}
+
+.formulario form{
+    color: goldenrod;
+}
+
+.enviar{
+    font-weight: bold;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 3px solid goldenrod;
+    color: goldenrod;
+    background-color: black;
+}
+
+#tienda .contenedor{
+    display: flex;
+    flex-direction: column;
+}
+
+#tienda h2{
+    font-weight: bold;
+    color: goldenrod;
+    text-align: center;
+}
+
+#tienda p{
+    font-weight: bold;
+    color: goldenrod;
+    font-size: 20px;
+
+}
+
+footer{
+    margin: 0;
+}
+
+footer h3{
+    text-align: center;
+    color: goldenrod;
+    font-weight: bold;
+}
+
+footer a{
+    text-decoration: none;
+    font-weight: bold;
+    color: gray;
+}
+
+footer a:hover{
+    color: white;
+}
+
+@media (min-width:720px){
+    header .contenedor{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #nosotros .contenedor{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #nosotros .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #nosotros h2{
+        margin-top: 0px;
+    }
+
+    #nosotros .img-contenedor{
+        background-image: url("/imagen/superVegeta.png");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+}
